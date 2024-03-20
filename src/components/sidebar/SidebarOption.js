@@ -3,7 +3,7 @@ import "./SidebarOption.css";
 
 const SidebarOption = ({text,Icon}) => {
   return (
-    <div>
+    <div className='sidebarOption'>
       <Icon />
       <h2>{text}</h2>
     </div>
