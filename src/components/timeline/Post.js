@@ -7,6 +7,7 @@ import {
 } from "@mui/icons-material";
 import { Avatar } from "@mui/material";
 import React from "react";
+import "./Post.css";
 
 const Post = () => {
   return (
