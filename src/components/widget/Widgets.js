@@ -1,5 +1,10 @@
 import { Search } from '@mui/icons-material'
 import React from 'react'
+import {
+  TwitterTimelineEmbed,
+  TwitterShareButton,
+  TwitterTweetEmbed,
+} from "react-twitter-embed";
 
 const Widgets = () => {
   return (
@@ -12,6 +17,17 @@ const Widgets = () => {
       <div className='widgets__widgetContainer'>
         <h2>いまどうしてる？</h2>
         {/* ライブラリ追加 */}
+        <TwitterTweetEmbed tweetId={"1771916063070187927"} />
+
+        <TwitterTimelineEmbed
+          sourceType="profile"
+          screenName="shumatsumoto328"
+          options={{ height: 400 }}
+        />
+        <TwitterShareButton
+          url={"https://twitter.com/shumatsumoto328"}
+          options={{ text: "#ちいかわ", via: "Shu_Matsumoto" }}
+        />
       </div>
     </div>
   )
