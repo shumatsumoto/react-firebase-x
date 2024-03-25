@@ -10,13 +10,14 @@ const Timeline = () => {
         <h2>ホーム</h2>
       </div>
       <TweetBox />
-
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      <Post
+        displayName="プログラミングチュートリアル"
+        userName="Shu_Matsumoto"
+        verified={true}
+        text="初めてのツイート"
+        avatar="https://source.unsplash.com/random"
+        image="https://source.unsplash.com/random"
+      />
     </div>
   );
 };
